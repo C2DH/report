@@ -1,0 +1,11 @@
+primary:
+  links:
+    - title: index
+      href: /
+    - title: the project
+      href: /the-project/
+
+secondary:
+  links:
+    - title: a
+      href: /a/
