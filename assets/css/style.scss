@@ -1,0 +1,25 @@
+---
+---
+
+$almost-white: #f9fafb;
+$ink-blue: #39393F;
+$bright-red: #e7472f;
+$light-ink-blue: #bcd1e5;
+
+body{
+  background-color: $almost-white;
+  color: $ink-blue;
+  font-family: Poppins, sans-serif;
+}
+
+a{
+  color: $ink-blue;
+
+  &:hover{
+    color: $bright-red;
+  }
+}
+
+
+@import "_layouts/page", "_layouts/index";
+@import "_includes/nav", "_includes/footer";

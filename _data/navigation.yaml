@@ -2,8 +2,12 @@ primary:
   links:
     - title: index
       href: /
-    - title: the project
-      href: /the-project/
+    - title: research
+      href: /research/
+    - title: outreach
+      href: /outreach/
+    - title: facts & figures
+      href: /facts-and-figures/
 
 secondary:
   links:
