@@ -4,7 +4,7 @@ layout: default
 
 <div class='page'>
   <div class='container'>
-    <div style='position: absolute'><h1>{{site.title}}</h1></div>
+    <div id='index-title'><h1>{{site.title}}</h1></div>
     
   </div>
   <canvas id='canvas' width="960" height="960"></canvas>
@@ -102,9 +102,11 @@ document.addEventListener("DOMContentLoaded", function(e) {
           context.moveTo(d.x + d.r, d.y);
           context.arc(d.x, d.y, d.r, 0, tau);
         });
-        context.fillStyle = "#291924";
+        context.fillStyle = "#738BDB";
+        // #F5CF35;
+// $blue: #738BDB;
         context.fill();
-        context.strokeStyle = "#fff";
+        context.strokeStyle = "#291924";
         context.stroke();
 
         context.restore();
