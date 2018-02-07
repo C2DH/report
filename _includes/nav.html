@@ -1,13 +1,13 @@
 
-  <nav class="navbar navbar-expand-lg navbar-light navbar-primary">
+  <!-- <nav class="navbar navbar-expand-lg navbar-light navbar-primary">
     <div class="container">
     <div class="collapse navbar-collapse">
       <a class="navbar-brand" style='margin-right: 0'>
        <img style='height:60px' src='{{ "assets/images/unilu-logo.png" | relative_url}}' alt='University of Luxembourg'>
       </a>
-      <!-- <a class="navbar-brand" href="{{'/' | absolute_url}}">
+      <a class="navbar-brand" href="{{'/' | absolute_url}}">
        {{site.title}}
-      </a> -->
+      </a>
       
       
       <ul class="navbar-nav">
@@ -15,19 +15,21 @@
           <a href='https://c2dh.uni.lu'><img style='height:60px' src='{{ "assets/images/c2dh-logo.png" | relative_url}}' alt='a C2DH production'></a>
         </li>
       </ul>
+
+
     </div>
     
     </div>
 
-  </nav>
-
+  </nav> -->
+  <!--
   <nav class="navbar navbar-expand-lg navbar-light navbar-primary">
     <div class="container">
     <div class="collapse navbar-collapse">
       
-      <!-- <a class="navbar-brand" href="{{'/' | absolute_url}}">
+      <a class="navbar-brand" href="{{'/' | absolute_url}}">
        {{site.title}}
-      </a> -->
+      </a>
       <ul class="navbar-nav ">
         {% for link in site.data.navigation.primary.links %}
         <li class='nav-item {% if page.link == link.href %} active {% endif %}'>
@@ -46,4 +48,28 @@
     
     </div>
 
-  </nav>
+  </nav> -->
+<nav>
+  <ul class="nav flex-column primary">
+    {% for link in site.data.navigation.primary.links %}
+    <li class="nav-item {% if page.link == link.href %} active {% endif %}">
+      <a class="nav-link" 
+        {% if page.lang == site.default_lang %} 
+          href='{{link.href | absolute_url}}' 
+        {% else %} 
+          href='{{page.lang | absolute_url}}{{link.href}}'
+        {% endif %}>{% assign key=link.title%}{% include t.html %}</a>
+    </li>
+    {% endfor %}
+  </ul>
+
+  <ul class='nav flex-row languages'>
+          {% for lang in site.languages %}
+          <li class="nav-item {% if lang == page.lang %} active {% endif %}">
+            <a class="nav-link" {% if lang == site.default_lang %} href='{{page.link | absolute_url}}' {% else %} href='{{lang | absolute_url}}{{page.link}}' {% endif %}><span>{{lang}}</span></a>
+          </li>
+          {% endfor %}
+        </ul>
+</nav>
+
+

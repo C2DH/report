@@ -1,9 +1,36 @@
 div.page{
-  margin-top: 100px;
+  position:relative;
+  min-height: 80%;
+  background: $almost-white;
 
-  h1{
-    font-size: 3em;
-    // color: $bright-red;
-    text-align: center;
+  padding-top: 20px;
+  margin: 0;
+
+  h1.title{
+
+    font-size: 5em;
+    text-align: left;
+    color: $blue;
+    text-align: left;
+    font-weight: normal;
+  }
+
+  h2.subheading {
+    font-size: 2em;
+    color: $cadmio;
+    font-weight: normal;
+        line-height: 1.5;
+  }
+
+  .contents{
+    font-size:1.2em;
+  }
+}
+
+
+@media (min-width: 992px){
+  div.page > .container {
+    max-width: 672px;
+    margin-left: 220px;
   }
 }

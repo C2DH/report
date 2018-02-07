@@ -1,11 +1,32 @@
 index:
-  en: home
+  en: index
   fr: accueil
-  pt: começo
-  it: home
-the project:
-  en: the project
-  fr: le projet
-  pt: o projeto
-  it: info
-
+  de: Start
+  it: index
+research:
+  en: research
+  fr: recherche
+  de: Zuche
+  it: ricerca
+outreach:
+  en: outreach
+  fr: comm
+  de: 
+  it: altrove
+facts & figures:
+  en: facts & figures
+  fr: facts & figures
+  de: 
+  it: altrove
+project-leaders: 
+  en: project leader
+  fr: project leader
+  de: project leader
+project-members: 
+  en: project member
+  fr: project member
+  de: project member
+project-former-members: 
+  en: former project members
+  fr: former project member
+  de: former project member

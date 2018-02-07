@@ -2,6 +2,8 @@ primary:
   links:
     - title: index
       href: /
+    - title: featured
+      href: /featured/
     - title: research
       href: /research/
     - title: outreach
@@ -9,7 +11,3 @@ primary:
     - title: facts & figures
       href: /facts-and-figures/
 
-secondary:
-  links:
-    - title: a
-      href: /a/

@@ -1,3 +1,42 @@
+$border-width: 1px;
+
 nav{
+  width: auto;
+  position: absolute;
+  z-index: 1000;
+  border-left: $border-width solid $blue;
+  box-shadow:  $border-width 0px $cadmio inset;
+
+  > ul.nav {
+    margin-left: 20px;
+    
+    li.nav-item.active > a > span{
+      border-bottom: $border-width solid $cadmio;
+      color: $cadmio;
+    }
+
+    li.nav-item > a{
+      > span{
+        color: $blue;
+        border-bottom: $border-width solid transparent;
+      }
+
+      &:hover > span{
+        border-bottom: $border-width solid $blue;
+        color: $blue;
+      }
+    }
+  }
+
+
   
+  > ul.nav.primary{
+    padding-top: 10px;
+  }
+
+  > ul.nav.languages{
+    margin-top: 10px;
+    padding-top: 0px;
+    border-top: $border-width solid $blue ;
+  }
 }

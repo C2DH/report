@@ -1,0 +1,40 @@
+- name: Regula Bürgi
+  id: regula-burgi
+  affiliation:
+  url:
+- name: Klaus Dittrich
+  id: klaus-dittrich
+  affiliation:
+  url:
+- name: Irma Hadzalic
+  id: irma-hadzalic
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/irma-hadzalic
+- name: Enric Novella
+  id: enric-novella
+  affiliation:
+  url:
+- name: Ira Plein
+  id: ira-plein
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/ira-plein
+- name: Françoise Poos
+  id: francoise-poos
+  affiliation: c2dh
+  url:
+- name: Karin Priem
+  id: karin-priem
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/karin-priem
+- name: Irma Hadzalic
+  id: irma-hadzalic
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/karin-priem
+- name: Frederik Herman
+  id: irma-hadzalic
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/karin-priem
+- name: Geert Thyssen
+  id: geert-thyssen
+  affiliation:
+  url:

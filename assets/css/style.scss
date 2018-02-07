@@ -2,23 +2,29 @@
 ---
 
 $almost-white: #f9fafb;
+$light-grey: #f1f1f3;
 $ink-blue: #39393F;
 $bright-red: #e7472f;
 $light-ink-blue: #bcd1e5;
 
+$white: #ffffff;
+$silver: #F3F7FA;
+$yellow: #F5CF35;
+$blue: #738BDB;
+$cadmio: #EB4C15;
+$dark-purple: #291924;
+
+html, body{
+  height: 100%;
+}
 body{
-  background-color: $almost-white;
-  color: $ink-blue;
+  background-color: $silver;
+  color: $dark-purple;
   font-family: Poppins, sans-serif;
+  font-size: 13px;
 }
 
-a{
-  color: $ink-blue;
 
-  &:hover{
-    color: $bright-red;
-  }
-}
 
 
 @import "_layouts/page", "_layouts/index";

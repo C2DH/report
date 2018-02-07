@@ -4,7 +4,115 @@ layout: default
 
 <div class='page'>
   <div class='container'>
-    <h1>{{site.title}}</h1>
-
+    <div style='position: absolute'><h1>{{site.title}}</h1></div>
+    
   </div>
+  <canvas id='canvas' width="960" height="960"></canvas>
 </div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+  function debounce(fn, delay) {
+
+    var timer = null;
+    return function () {
+      // log('debounce!');
+      var context = this, args = arguments;
+      clearTimeout(timer);
+      timer = setTimeout(function () {
+        fn.apply(context, args);
+      }, delay);
+    };
+  }
+
+
+document.addEventListener("DOMContentLoaded", function(e) {
+    var canvas = document.getElementById('canvas'),
+        context = canvas.getContext('2d'),
+        width = canvas.width,
+        height = canvas.height,
+        tau = 2 * Math.PI;
+
+    var drawStuff = debounce(_drawStuff, 500);
+
+    // resize the canvas to fill browser window dynamically
+    window.addEventListener('resize', resizeCanvas, false);
+
+    function resizeCanvas() {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight*4/5;
+
+      width = canvas.width,
+      height = canvas.height,
+      /**
+       * Your drawings need to be inside this function otherwise they will be reset when 
+       * you resize the browser window and the canvas goes will be cleared.
+       */
+      drawStuff()
+    }
+
+    
+    resizeCanvas();
+
+
+    function _drawStuff() {
+      n = 16
+            // do your drawing stuff here
+      var nodes = d3.range(n*n).map(function(i) {
+        return {
+          index: i,
+          r: Math.random() * 8 + 8
+        };
+      });
+
+      var links = [];
+
+      for (var y = 0; y < n; ++y) {
+        for (var x = 0; x < n; ++x) {
+          if (y > 0) links.push({source: (y - 1) * n + x, target: y * n + x});
+          if (x > 0) links.push({source: y * n + (x - 1), target: y * n + x});
+        }
+      }
+
+
+      var simulation = d3.forceSimulation(nodes)
+          .velocityDecay(0.2)
+          .force("x", d3.forceX().strength(0.002))
+          .force("y", d3.forceY().strength(0.002))
+          .force("collide", d3.forceCollide().radius(function(d) { return d.r + 0.5; }).iterations(2))
+          // .force("link", d3.forceLink(links).strength(1).distance(200).iterations(10))
+          .on("tick", ticked);
+
+       // var node = svg.selectAll("circle")
+       //    .data(graph.nodes)
+       //    .enter().append("circle")
+       //      .attr("r", radius - .75)
+       //      .style("fill", function(d) { return fill(d.group); })
+       //      .style("stroke", function(d) { return d3.rgb(fill(d.group)).darker(); })
+       //      .call(force.drag);
+
+
+      function ticked() {
+        context.clearRect(0, 0, width, height);
+        context.save();
+        context.translate(width / 2, height / 2);
+
+        context.beginPath();
+        nodes.forEach(function(d) {
+          context.moveTo(d.x + d.r, d.y);
+          context.arc(d.x, d.y, d.r, 0, tau);
+        });
+        context.fillStyle = "#291924";
+        context.fill();
+        context.strokeStyle = "#fff";
+        context.stroke();
+
+        context.restore();
+      }
+
+    }
+});
+
+
+
+</script>
