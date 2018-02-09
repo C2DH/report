@@ -1,0 +1,80 @@
+---
+
+---
+{
+  "nodes": [
+  {% assign projects = site.pages | where: "layout","project" | where: "lang", "en" %}
+  {% for project in projects %}
+    { 
+      "id": "{{project.name}}",
+      "name": "{{project.title}}",
+      "type": "project"
+    },
+  {% endfor %}
+  {% for person in site.data.people %}
+    { 
+      "id": "{{person.id}}",
+      "name": "{{person.name}}",
+      "type": "person"
+    },
+  {% endfor %}
+  {% for partner in site.data.partners %}
+    { 
+      "id": "{{partner.id}}",
+      "name": "{{partner.name}}",
+      "type": "partner"
+    },
+  {% endfor %}
+    {}
+  ],
+  "links": [
+    {% for project in projects %}
+      {% for personslug in project.team.leaders %}
+    {
+      "_id": "{{project.name}}-{{personslug}}",
+      "source": "{{personslug}}", 
+      "target": "{{project.name}}",
+      "extra": {
+        "role": "leader"
+      },
+      "value": 2
+    },
+      {% endfor %}
+      {% for personslug in project.team.members %}
+    {
+      "_id": "{{project.name}}-{{personslug}}",
+      "source": "{{personslug}}", 
+      "target": "{{project.name}}",
+      "extra": {
+        "role": "member"
+      },
+      "value": 2
+    }, 
+      {% endfor %}
+      {% for personslug in project.team.formermembers %}
+    {
+      "_id": "{{project.name}}-{{personslug}}",
+      "source": "{{personslug}}", 
+      "target": "{{project.name}}",
+      "extra": {
+        "role": "formermember"
+      },
+      "value": 1
+    },
+      {% endfor %}
+      {% for partnerslug in project.partners %}
+    {
+      "_id": "{{project.name}}-{{partnerslug}}",
+      "source": "{{partnerslug}}", 
+      "target": "{{project.name}}",
+      "extra": {
+        "role": "partner"
+      },
+      "value": 2
+    },
+      {% endfor %}
+
+  {% endfor %}
+    {}
+  ]
+}

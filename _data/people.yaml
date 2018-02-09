@@ -1,3 +1,7 @@
+- name: Estelle Bunout
+  id: estelle-bunout
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/estelle-bunout
 - name: Regula Bürgi
   id: regula-burgi
   affiliation:
@@ -6,6 +10,14 @@
   id: klaus-dittrich
   affiliation:
   url:
+- name: Marten Düring
+  id: marten-during
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/marten-during
+- name: Daniele Guido
+  id: daniele-guido
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/daniele-guido
 - name: Irma Hadzalic
   id: irma-hadzalic
   affiliation: c2dh
@@ -26,15 +38,25 @@
   id: karin-priem
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/karin-priem
-- name: Irma Hadzalic
-  id: irma-hadzalic
-  affiliation: c2dh
-  url: https://www.c2dh.uni.lu/people/karin-priem
 - name: Frederik Herman
-  id: irma-hadzalic
+  id: frederik-herman
   affiliation: c2dh
-  url: https://www.c2dh.uni.lu/people/karin-priem
+  url: https://www.c2dh.uni.lu/people/frederik-herman
 - name: Geert Thyssen
   id: geert-thyssen
   affiliation:
   url:
+- name: paul-schroeder
+  id: paul-schroeder
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/paul-schroeder
+- name: thijs-van-beek
+  id: thijs-van-beek
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/thijs-van-beek
+- name: Lars Wieneke
+  id: lars-wieneke
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/lars-wieneke
+
+

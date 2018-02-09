@@ -72,4 +72,19 @@
         </ul>
 </nav>
 
+{% assign projects = site.pages | where: "layout","project" | where: "lang", "en" %}
+  
 
+
+<div id="nav-projects-list">
+  <ul class="nav flex-column">
+    {% for _project in projects %}
+    {% assign translations = site.pages | where: "link", _project.link | where: "layout","project" | where: "lang", page.lang %}
+    <li class='nav-item'>
+      {% assign project = translations[0] %}
+      {% include project.html %}
+    </li>
+    {% endfor %}
+  </ul>
+  
+</div>

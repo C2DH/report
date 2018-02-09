@@ -2,27 +2,9 @@
 permalink: /research/famoso/
 link: /research/famoso/
 layout: project
-lang: en
+lang: fr
 title: Fabricating Modern Societies (FAMOSO)
 subheading: The "Age of Steel" in Luxembourg revisited. Technologies of utopian capitalism and the making of national identity
-team:
-  leaders:
-    - karin-priem
-  members:
-    - frederik-herman
-    - ira-plein
-    - francoise-poos
-    - irma-hadzalic
-  formermembers:
-    - regula-burgi
-    - klaus-dittrich
-    - enric-novella
-    - geert-thyssen
-partners:
-  - ArcelorMittal
-  - ANL 
-  - CNA
-  - FNR 
 ---
 
 The idea for the FAMOSO projects originated in May 2010 when Karin Priem, the principal investigator of the FAMOSO projects, was introduced to a huge holding of 2,251 glass plates archived at the Centre national de l’audiovisuel (CNA) in Dudelange. 

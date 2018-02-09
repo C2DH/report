@@ -12,7 +12,7 @@ layout: default
     <section class="contents">
       {{page.content | markdownify }}
       
-      {% assign projects = site.pages | where: "layout","project" | where: "language", "en" %}
+      {% assign projects = site.pages | where: "layout","project" | where: "lang", "en" %}
 
       
       {% for project in projects %}

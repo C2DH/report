@@ -1,0 +1,15 @@
+- name: Bibliothèque nationale de France (BNF), Paris, France
+  id: BnF
+  url: https://www.bnf.fr
+- name: Digital Humanities Laboratory, EPFL.
+  id: EPFL
+  url: https://dhlab.epfl.ch
+- name: Fonds national de la recherche (FNR)
+  id: FNR
+  url: https://dhlab.epfl.ch
+- name: Archives nationales de Luxembourg (ANL)
+  id: ANL
+- name: Centre national de l’audiovisuel (CNA)
+  id: CNA
+- name: ArcelorMittal
+  id: ArcelorMittal

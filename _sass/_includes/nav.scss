@@ -22,8 +22,8 @@ nav{
       }
 
       &:hover > span{
-        border-bottom: $border-width solid $blue;
-        color: $blue;
+        border-bottom: $border-width solid $dark-purple;
+        color: $dark-purple;
       }
     }
   }
@@ -40,3 +40,50 @@ nav{
     border-top: $border-width solid $blue ;
   }
 }
+
+
+#nav-projects-list{
+    position:absolute; 
+    left:0; 
+    top: 250px;
+    z-index: 2;
+
+    li a.project{
+      // background: $cadmio;
+      background: $cadmio;
+      border-left: 1px solid $blue;
+      margin-bottom: 2px;
+      display: inline-block;
+      .inner {
+        border-left: 1px solid $cadmio;
+        padding: 10px 15px;
+        transition: transform .21s ease-in-out;
+        background: $dark-purple;
+        
+      }
+      .inner > .dates{
+        color: rgba(255,255,255, .5);
+      
+      }
+
+      .inner > span{
+        color: $white;
+        border-bottom: 1px solid transparent;
+      }
+
+      &:hover{
+        text-decoration: none;
+        
+
+        .inner{
+          transform: translate(10px, 0px);
+        }
+
+        .inner > span{
+          border-bottom-color: $white;
+        }
+      }
+      
+
+    }
+  }

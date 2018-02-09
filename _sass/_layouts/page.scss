@@ -27,6 +27,12 @@ div.page{
   }
 }
 
+@media (min-width: 768px){
+  div.page > .container {
+    margin-left: 220px;
+    max-width: 498px;
+  }
+}
 
 @media (min-width: 992px){
   div.page > .container {
