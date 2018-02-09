@@ -1,5 +1,5 @@
 ---
-permalink: /research/impresso/
+permalink: /fr/research/impresso/
 link: /research/impresso/
 layout: project
 lang: fr

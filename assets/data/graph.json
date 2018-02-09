@@ -18,7 +18,9 @@
       "type": "person"
     },
   {% endfor %}
-  {% for partner in site.data.partners %}
+  {% assign partners = site.data.partners | where: "project-core-partner", "y" %}
+  
+  {% for partner in partners %}
     { 
       "id": "{{partner.id}}",
       "name": "{{partner.name}}",
@@ -36,6 +38,17 @@
       "target": "{{project.name}}",
       "extra": {
         "role": "leader"
+      },
+      "value": 2
+    },
+      {% endfor %}
+      {% for personslug in project.team.coordinators %}
+    {
+      "_id": "{{project.name}}-{{personslug}}",
+      "source": "{{personslug}}", 
+      "target": "{{project.name}}",
+      "extra": {
+        "role": "coordinator"
       },
       "value": 2
     },

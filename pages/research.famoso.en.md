@@ -5,6 +5,7 @@ layout: project
 lang: en
 title: Fabricating Modern Societies (FAMOSO)
 subheading: The "Age of Steel" in Luxembourg revisited. Technologies of utopian capitalism and the making of national identity
+level: 1
 team:
   leaders:
     - karin-priem

@@ -1,15 +1,801 @@
-- name: Bibliothèque nationale de France (BNF), Paris, France
-  id: BnF
-  url: https://www.bnf.fr
-- name: Digital Humanities Laboratory, EPFL.
-  id: EPFL
-  url: https://dhlab.epfl.ch
-- name: Fonds national de la recherche (FNR)
-  id: FNR
-  url: https://dhlab.epfl.ch
-- name: Archives nationales de Luxembourg (ANL)
-  id: ANL
-- name: Centre national de l’audiovisuel (CNA)
-  id: CNA
-- name: ArcelorMittal
-  id: ArcelorMittal
+-
+    id: AhPe
+    name: Archives historiques du Parlement européen
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Luxembourg
+    country: Luxembourg
+    url: http://www.europarl.europa.eu/aboutparliament/fr/20150201PVL00023/Archives-historiques
+-
+    id: ALEH
+    name: 'Association luxembourgeoise des enseignants d''histoire (ALEH)'
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Luxembourg
+    country: Luxembourg
+    url: 
+-
+    id: ANL
+    name: Archives nationales de Luxembourg (ANL)
+    corporate: y
+    project-core-partner: y
+    projects: "Luxstapoje\nWWI\nFAMOSO\nDTU DHH\n"
+    city: Luxembourg
+    country: Luxembourg
+    url: http://anlux.public.lu/fr.html
+-
+    id: ANR
+    name: Agence nationale de la Recherche (ANR)
+    corporate: 
+    project-core-partner: y
+    projects: BLIZAAR
+    city: Paris
+    country: France
+    url: http://www.agence-nationale-recherche.fr/
+-
+    id: ArcelorMittal
+    name: ArcelorMittal
+    corporate: 
+    project-core-partner: y
+    projects: "Public History \nFAMOSO"
+    city: Luxembourg
+    country: Luxembourg
+    url: http://corporate.arcelormittal.com/
+-
+    id: AU
+    name: Aarhus University
+    corporate: 
+    project-core-partner: y
+    projects: Humanities at Scale (HaS)
+    city: Aarhus
+    country: Denmark
+    url: http://www.au.dk/en/
+-
+    id: bayrischer-rundfunk
+    name: Bayrischer Rundfunk
+    corporate: 
+    project-core-partner: 
+    projects: 
+    city: Munich
+    country: Germany
+    url: https://www.br.de/unternehmen/inhalt/organisation/bayerischer-rundfunk-information-in-english-100.html
+-
+    id: BNL
+    name: Bibliohtèque nationale de Luxembourg (BNL)
+    corporate: y
+    project-core-partner: y
+    projects: "FAMOSO\nWWI\nIMPRESSO\nDTU DHH"
+    city: Luxembourg
+    country: Luxembourg
+    url: http://www.bnl.public.lu/fr.html
+-
+    id: CEGESOMA
+    name: 'Centre d''Études et Documentation Guerre et Sociétés contemporaines (CEGESOMA)'
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Bruxelles
+    country: Belgium
+    url: http://www.cegesoma.be/cms/index_fr.php
+-
+    id: centre-mig-hum
+    name: Centre de documentation sur les migrations humaines
+    corporate: y
+    project-core-partner: y
+    projects: "WWI\nEULBMIG\n"
+    city:  Dudelange
+    country: Luxembourg
+    url: https://www.cdmh.lu/
+-
+    id: CESTA
+    name: University of Stanford _ Center for Spatial and Textual Analysis (CESTA)
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Stanford
+    country: USA
+    url: https://cesta.stanford.edu/
+-
+    id: CFL
+    name: Société nationale des chemins de fer luxembourgeois (CFL)
+    corporate: 
+    project-core-partner: 
+    projects: 
+    city: Luxembourg
+    country: Luxembourg
+    url: http://www.cfl.lu/fr
+-
+    id: CHIM
+    name: CHIM Archive (David Seymour)
+    corporate: 
+    project-core-partner: y
+    projects: Public  History
+    city: New York
+    country: USA
+    url: 
+-
+    id: CNA
+    name: 'Centre National de l''Audiovisuel (CNA)'
+    corporate: y
+    project-core-partner: y
+    projects: "FAMOSO \nDTU DHH"
+    city: Dudelange
+    country: Luxembourg
+    url: http://www.cna.public.lu/fr/index.html
+-
+    id: CNL
+    name: Centre national de littérature (CNL)
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Mersch
+    country: Luxembourg
+    url: https://cnl.public.lu/fr/index.html
+-
+    id: CNR
+    name: Consiglio Nazionale delle Ricerche
+    corporate: 
+    project-core-partner: y
+    projects: Humanities at Scale (HaS)
+    city: Rome
+    country: Italy
+    url: https://www.cnr.it/en
+-
+    id: CNRS
+    name: Centre national de la recherche scientifique (CNRS)
+    corporate: y
+    project-core-partner: y
+    projects: Humanities at Scale (HaS)
+    city: Paris
+    country: France
+    url: http://www.cnrs.fr/accueil.php
+-
+    id: cultural-centre-neumunster
+    name: Centre Culturel de Rencontre Abbaye de Neumünster
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Luxembourg
+    country: Luxembourg
+    url: https://www.neimenster.lu/
+-
+    id: DARIAH-EU
+    name: DARIAH-EU
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Berlin
+    country: Germany
+    url: https://www.dariah.eu/
+-
+    id: EC
+    name: Commission européenne
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Bruxelles
+    country: Belgique
+    url: 
+-
+    id: ECLux
+    name: Représentation de la Commission européenne au Luxembourg
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Luxembourg
+    country: Luxembourg
+    url: https://ec.europa.eu/luxembourg/home_fr
+-
+    id: EHESS
+    name: "École des Hautes Études en Sciences Sociales (EHESS)"
+    corporate: 
+    project-core-partner: y
+    projects: DTU DHH
+    city: Paris
+    country: France
+    url: https://www.ehess.fr/fr
+-
+    id: EISTI
+    name: 'Université Paris Seine  École d''ingénieurs - Mathématiques - Informatique (EISTI)'
+    corporate: 
+    project-core-partner: y
+    projects: BLIZAAR
+    city: Cergy-Pontoise
+    country: France
+    url: http://eisti.fr/fr/lecole
+-
+    id: EPFL
+    name: Ecole polytechnique fédérale de Lausanne (EPFL) _ Digital Humanities Laboratory
+    corporate: y
+    project-core-partner: y
+    projects: "IMPRESSO\nDTU DHH"
+    city: Lausanne
+    country: Switzerland
+    url: https://dhlab.epfl.ch/
+-
+    id: EUI
+    name: European University Institute (EUI)
+    corporate: y
+    project-core-partner: y
+    projects: DTU DHH
+    city: Florence
+    country: Italy
+    url: https://www.eui.eu/
+-
+    id: Europeana
+    name: Europeana
+    corporate: y
+    project-core-partner: y
+    projects: WWI
+    city: The Hague
+    country: The Netherlands
+    url: https://www.europeana.eu/portal/en
+-
+    id: fh-postdam
+    name: Fachhochschule Potsdam
+    corporate: 
+    project-core-partner: y
+    projects: Humanities at Scale (HaS)
+    city: Potsdam
+    country: Germany
+    url: https://www.fh-potsdam.de/
+-
+    id: FME
+    name: Fondation du Mérite européen
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Luxembourg
+    country: Luxembourg
+    url: http://www.merite-europeen.eu/
+-
+    id: FNR
+    name: Luxembourg National Research Fund (FNR)
+    corporate: y
+    project-core-partner: y
+    projects: 
+    city: Esch-sur-Alzette
+    country: Luxembourg
+    url: https://www.fnr.lu/
+-
+    id: FRTI
+    name: Fondation Robert Triffin International
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Bruxelles/Louvain
+    country: Belgium
+    url: http://www.triffininternational.eu/
+-
+    id: geschichte-kit
+    name: Karlsruhe Institut für Technologie_Institut für Geschichte
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Karlsruhe
+    country: Germany
+    url: http://www.geschichte.kit.edu/
+-
+    id: IEF
+    name: Institute of Ethnology and Folklore Research
+    corporate: 
+    project-core-partner: y
+    projects: Humanities at Scale (HaS)
+    city: Zagreb
+    country: Croatia
+    url: http://www.ief.hr/Home/tabid/108/language/en-US/Default.aspx
+-
+    id: IFEN
+    name: 'Institut de Formation de l''éducation nationale (IFEN)'
+    corporate: y
+    project-core-partner: y
+    projects: "WWI\nRANKE_2"
+    city: Luxembourg
+    country: Luxembourg
+    url: https://ssl.education.lu/ifen/
+-
+    id: IHMC
+    name: 'École Normale Supérieure _ Institut d''histoire moderne et contemporaine'
+    corporate: 
+    project-core-partner: y
+    projects: Luxstapoje
+    city: Paris
+    country: France
+    url: http://www.ens.fr/laboratoire/institut-d-histoire-moderne-et-contemporaine-ihmc
+-
+    id: IHTP
+    name: 'CNRS_Institut d''Histoire du Temps Présent (IHTP)'
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Paris
+    country: France
+    url: http://www.ihtp.cnrs.fr/
+-
+    id: infoclio
+    name: infoclio.ch
+    corporate: 
+    project-core-partner: y
+    projects: IMPRESSO
+    city: Bern
+    country: Switzerland
+    url: https://www.infoclio.ch/en/home
+-
+    id: information-EP
+    name: 'Bureau d''information du Parlement européen'
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Luxembourg
+    country: Luxembourg
+    url: http://www.europarl.europa.eu/luxembourg/fr/home.html
+-
+    id: InstitutPierreWerner
+    name: Institut Pierre Werner
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Luxembourg
+    country: Luxembourg
+    url: https://www.ipw.lu/accueil
+-
+    id: ISCHE
+    name: International Standing Conference for the History of Education (ISCHE)
+    corporate: 
+    project-core-partner: y
+    projects: Public history
+    city: Berlin
+    country: Germany
+    url: http://www.ische.org/
+-
+    id: KCL
+    name: 'King''s College _ Institute of Contemporary British History'
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: London
+    country: UK
+    url: https://www.kcl.ac.uk/study/offer-holders/postgraduate/social-science-and-public-policy/institute-of-contemporary-british-history.aspx
+-
+    id: LabEx-ENHE
+    name: Laboratoire d'Excellence \"Ecrire une nouvelle histoire de l'Europe\" (LabEx-ENHE)
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Paris
+    country: France
+    url: http://labex-ehne.fr/
+-
+    id: LALUX
+    name: La Luxembourgeoise
+    corporate: 
+    project-core-partner: y
+    projects: LALUX
+    city: Leudelange
+    country: Luxembourg
+    url: https://www.lalux.lu/
+-
+    id: LeTemps
+    name: Swiss newspaper Le Temps
+    corporate: 
+    project-core-partner: y
+    projects: IMPRESSO
+    city: Genève
+    country: Switzerland
+    url: https://www.letemps.ch/
+-
+    id: LIST
+    name: Luxembourg Institute of Science and Technology (LIST)
+    corporate: y
+    project-core-partner: y
+    projects: BLIZAAR
+    city: Esch-sur-Alzette
+    country: Luxembourg
+    url: https://www.list.lu/
+-
+    id: Magnum
+    name: Magnum Foundation
+    corporate: y
+    project-core-partner: y
+    projects: Public History 
+    city: Paris New York
+    country: France USA
+    url: https://www.magnumfoundation.org/
+-
+    id: ME-LU
+    name: Ministère d'État
+    corporate: 
+    project-core-partner: y
+    projects: WWI
+    city: Luxembourg
+    country: Luxembourg
+    url: 
+-
+    id: MNHA
+    name: Musée national d'histoire et d'art Luxembourg (MNHA)'
+    corporate: y
+    project-core-partner: y
+    projects: WWI
+    city:  Luxembourg
+    country: Luxembourg
+    url: http://www.mnha.lu/
+-
+    id: musee-national-histoire-militaire
+    name: Musée National d'Hhistoire Militaire
+    corporate: y
+    project-core-partner: y
+    projects: WWI
+    city: Diekirch
+    country: Luxembourg
+    url: http://www.mnhm.net/cms/index.php/de/
+-
+    id: NIOD
+    name: NIOD Institute for War, Holocaust and Genocide Studies
+    corporate: y
+    project-core-partner: y
+    projects: Luxstapoje
+    city: Amsterdam
+    country: Netherlands
+    url: https://www.niod.nl/en
+-
+    id: NZZ
+    name: Neue Züricher Zeitung
+    corporate: 
+    project-core-partner: y
+    projects: IMPRESSO
+    city: Zürich
+    country: Switzerland
+    url: https://www.nzz.ch/
+-
+    id: OAW
+    name: Österreichische Akademie der Wissenschaften (ÖAW) i
+    corporate: 
+    project-core-partner: y
+    projects: Humanities at Scale (HaS)
+    city: Wien
+    country: Austria
+    url: https://www.oeaw.ac.at/
+-
+    id: POST
+    name: POST Luxembourg
+    corporate: 
+    project-core-partner: y
+    projects: LUXPTT
+    city: Luxembourg
+    country: Luxembourg
+    url: https://www.post.lu/
+-
+    id: R1007
+    name: Radio 100,7
+    corporate: 
+    project-core-partner: y
+    projects: PODCAST_Werner
+    city: Luxembourg
+    country: Luxembourg
+    url: https://www.100komma7.lu/
+-
+    id: SN
+    name: Schweizerische Nationalbibliothek
+    corporate: 
+    project-core-partner: y
+    projects: IMPRESSO
+    city: Bern
+    country: Switzerland
+    url: https://www.nb.admin.ch/snl/de/home.html
+-
+    id: sussex
+    name: University of Sussex 
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Brighton
+    country: UK
+    url: http://www.sussex.ac.uk/
+-
+    id: ub-wirtschaft-swa
+    name: Schweizerische Wirtschaftsarchiv
+    corporate: 
+    project-core-partner: y
+    projects: IMPRESSO
+    city: Basel
+    country: Luxembourg
+    url: http://www.ub.unibas.ch/en/ub-wirtschaft-swa/schweiz-wirtschaftsarchiv/allgemeines/
+-
+    id: UNESCO
+    name: UNESCO Archives
+    corporate: 
+    project-core-partner: y
+    projects: Public History 
+    city: Paris
+    country: France
+    url: http://www.unesco.org/archives/new2010/index.html
+-
+    id: uni-aachen-RWTH
+    name: RWTH Aachen University
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Aachen
+    country: Germany
+    url: https://www.rwth-aachen.de/
+-
+    id: uni-bergische
+    name: Bergische Universität Wuppertal_Interdisziplinäres Zentrum für Wissenschafts- und Technikforschung
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Wuppertal
+    country: Germany
+    url: https://www.izwt.uni-wuppertal.de/index.php?id=1191
+-
+    id: uni-birmingham
+    name: University of Birmingham
+    corporate: 
+    project-core-partner: y
+    projects: Public History 
+    city: Birmingham
+    country: UK
+    url: https://www.birmingham.ac.uk/index.aspx
+-
+    id: uni-bordeaux-LABRI
+    name: Université de Bordeaux _ Laboratoire Bordelais de Recherche en Informatique
+    corporate: 
+    project-core-partner: y
+    projects: BLIZAAR
+    city: Bordeaux
+    country: France
+    url: https://www.labri.fr/
+-
+    id: uni-fairfax
+    name: Georges Mason University
+    corporate: y
+    project-core-partner: y
+    projects: DTU DHH
+    city: Fairfax
+    country: USA
+    url: https://www2.gmu.edu/
+-
+    id: uni-fairfax-rrchnm
+    name: George Mason University _ Roy Rosenzweig Center for History and New Media
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Fairfax Washington?
+    country: USA
+    url: https://rrchnm.org/
+-
+    id: uni-gottingen
+    name: Georg-August-Universität Göttingen
+    corporate: y
+    project-core-partner: y
+    projects: "DTU DHH\nHumanities at Scale (HaS)"
+    city: Göttingen
+    country: Germany
+    url: https://www.uni-goettingen.de/de/die+universit%c3%a4t/50217.html
+-
+    id: uni-liege-RPI
+    name: Université de Liège - Groupe de recherches \"Ressources, Pouvoir(s), Idéologie(s)\"
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Liège
+    country: Belgium
+    url: http://web.philo.ulg.ac.be/rpi/
+-
+    id: uni-mainz-IFTEK
+    name: Johannes Gutenberg Universität Mainz_Institut für Film-, Theater- und empirische Kulturwissenschaft
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Mainz
+    country: Germany
+    url: https://www.iftek.uni-mainz.de/
+-
+    id: uni-maynoothuniversity
+    name: Maynooth University Arts and Humanities Institute
+    corporate: 
+    project-core-partner: y
+    projects: Humanities at Scale (HaS)
+    city: Maynooth
+    country: Ireland
+    url: https://www.maynoothuniversity.ie/foras-feasa
+-
+    id: uni-paris-sorbonne
+    name: Université Paris-Sorbonne
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Paris
+    country: France
+    url: http://www.english.paris-sorbonne.fr/?lang=fr
+-
+    id: uni-postdam
+    name: Universität Potsdam
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Potsdam
+    country: Germany
+    url: http://www.uni-potsdam.de/en/
+-
+    id: uni-rotterdam
+    name: Erasmus University Rotterdam
+    corporate: 
+    project-core-partner: y
+    projects: DTU DHH
+    city: Rotterdam
+    country: The Netherlands
+    url: https://www.eur.nl/en
+-
+    id: uni-saarland
+    name: Universität des Saarlandes
+    corporate: y
+    project-core-partner: y
+    projects: POPKULT 60
+    city: Saarbrücken
+    country: Germany
+    url: https://www.uni-saarland.de/nc/startseite.html
+-
+    id: uni-tambov
+    name: G.R. Derzhavin Tambov State University
+    corporate: 
+    project-core-partner: y
+    projects: Russian Emigration to Luxembourg
+    city: Tambov
+    country: Russia
+    url: http://www.tsutmb.ru/international/internatioanal_students_in_tsu/derzhavin_tambov_state_university
+-
+    id: uni-trier-DH
+    name: Universität Trier _ Trier Center for Digital Humanities
+    corporate: y
+    project-core-partner: y
+    projects: DTU DHH
+    city: Trier
+    country: Germany
+    url: http://kompetenzzentrum.uni-trier.de/de/
+-
+    id: uni-uclouvain
+    name: 'Université catholique de Louvain _ Centre d''études européennes'
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Louvain-la-Neuve
+    country: Belgium
+    url: https://uclouvain.be/fr/instituts-recherche/ispole/cee
+-
+    id: uni-ULB
+    name: Université Libre de Bruxelles
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Bruxelles
+    country: Belgium
+    url: http://www.ulb.ac.be/
+-
+    id: uni-umea-Humlab
+    name: Umeå University _ Humlab
+    corporate: y
+    project-core-partner: y
+    projects: DTU DHH
+    city: Umeå University
+    country: Sweden
+    url: http://www.humlab.umu.se/en
+-
+    id: uni-UVA
+    name: University of Amsterdam 
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Amsterdam
+    country: The Netherlands
+    url: http://www.uva.nl/en/home
+-
+    id: uni-weimar
+    name: Bauhaus Universität Weimar_Professur Geschichte und Theorie der Kulturtechniken
+    corporate: 
+    project-core-partner: 
+    projects: 
+    city: Weimar
+    country: Germany
+    url: https://www.uni-weimar.de/de/medien/professuren/medienwissenschaft/geschichte-und-theorie-der-kulturtechniken/willkommen/
+-
+    id: uni-UNIL
+    name: Université de Lausanne_Section histoire
+    corporate: 
+    project-core-partner: y
+    projects: IMPRESSO
+    city: Lausanne
+    country: Switzerland
+    url: http://www.unil.ch/hist/home.html
+-
+    id: uni-lorraine
+    name: Université de Lorraine
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Nanc, Metz, Épinal
+    country: France
+    url: http://www.univ-lorraine.fr/
+-
+    id: uni-universityofcalifornia
+    name: University of California
+    corporate: 
+    project-core-partner: y
+    projects: BENELUX
+    city: Berkeley
+    country: USA
+    url: https://www.universityofcalifornia.edu/
+-
+    id: uni-lincoln-UNL
+    name: University of Nebraska-Lincoln 
+    corporate: y
+    project-core-partner: y
+    projects: DTU DHH
+    city: Lincoln
+    country: USA
+    url: https://www.unl.edu/
+-
+    id: UZH
+    name: University of Zurich _ Institute of Computational Linguistics
+    corporate: y
+    project-core-partner: y
+    projects: IMPRESSO
+    city: Zurich
+    country: Switzerland
+    url: http://www.cl.uzh.ch/en.html
+-
+    id: VS
+    name: 'Archives de l''État du Valais'
+    corporate: 
+    project-core-partner: y
+    projects: IMPRESSO
+    city: Sion
+    country: Switzerland
+    url: https://www.vs.ch/web/culture/aev
+-
+    id: wernerbischof
+    name: Werner Bischof Estate
+    corporate: 
+    project-core-partner: y
+    projects: Public History 
+    city: Zurich
+    country: Switzerland
+    url: http://www.wernerbischof.com/de/main.html
+-
+    id: Zeitgeschichte
+    name: Institut für Zeitgeschichte
+    corporate: y
+    project-core-partner: y
+    projects: Luxstapoje
+    city: München/Berlin
+    country: Germany
+    url: http://www.ifz-muenchen.de/
+-
+    id: ZPB
+    name: Zentrum für politische Bildung
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Luxembourg
+    country: Luxembourg
+    url: https://zpb.lu/
+-
+    id: ZZF
+    name: Centre for Contemporary History (ZZF)
+    corporate: y
+    project-core-partner: 
+    projects: 
+    city: Potsdam
+    country: Germany
+    url: http://zzf-potsdam.de/en/centre-contemporary-history-0
+-
+    id: MESHS-Lille
+    name: 'Maison européenne des sciences de l''homme et de la société'
+    corporate: 
+    project-core-partner: y
+    projects: DHH
+    city: Lille
+    country: France
+    url: https://www.meshs.fr/page/accueil

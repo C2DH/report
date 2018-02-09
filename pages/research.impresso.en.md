@@ -5,6 +5,7 @@ layout: project
 lang: en
 title: impresso. Media monitoring of the past
 subheading: Mining 200 years of historical newspapers
+level: 1
 team:
   leaders:
     - marten-during

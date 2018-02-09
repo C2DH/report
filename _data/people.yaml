@@ -1,62 +1,161 @@
-- name: Estelle Bunout
+- 
+  name: Estelle Bunout
   id: estelle-bunout
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/estelle-bunout
-- name: Regula Bürgi
+- 
+  name: Regula Bürgi
   id: regula-burgi
   affiliation:
   url:
-- name: Klaus Dittrich
+- 
+  name: Tim Van Der Heijden
+  id: tim-van-der-heijden
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/tim-van-der-heijden
+- 
+  name: Klaus Dittrich
   id: klaus-dittrich
   affiliation:
   url:
-- name: Marten Düring
+- 
+  name: Marten Düring
   id: marten-during
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/marten-during
-- name: Daniele Guido
+- 
+  name: Andreas Fickers
+  id: andreas-fickers
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/andreas-fickers
+- 
+  name: Daniele Guido
   id: daniele-guido
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/daniele-guido
-- name: Irma Hadzalic
+- 
+  name: Irma Hadzalic
   id: irma-hadzalic
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/irma-hadzalic
-- name: Enric Novella
+- 
+  name: Enric Novella
   id: enric-novella
   affiliation:
   url:
-- name: Ira Plein
+- 
+  name: Ira Plein
   id: ira-plein
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/ira-plein
-- name: Françoise Poos
+- 
+  name: Françoise Poos
   id: francoise-poos
   affiliation: c2dh
   url:
-- name: Karin Priem
+- 
+  name: Karin Priem
   id: karin-priem
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/karin-priem
-- name: Frederik Herman
+- 
+  name: Frederik Herman
   id: frederik-herman
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/frederik-herman
-- name: Geert Thyssen
+- 
+  name: Geert Thyssen
   id: geert-thyssen
   affiliation:
   url:
-- name: paul-schroeder
+- 
+  name: paul-schroeder
   id: paul-schroeder
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/paul-schroeder
-- name: thijs-van-beek
+- 
+  name: thijs-van-beek
   id: thijs-van-beek
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/thijs-van-beek
-- name: Lars Wieneke
+- 
+  name: Lars Wieneke
   id: lars-wieneke
   affiliation: c2dh
   url: https://www.c2dh.uni.lu/people/lars-wieneke
+- 
+  name: Jakub Bronec
+  id: jakub-bronec
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/jakub-bronec
+- 
+  name: Marleen De Kramer
+  id: marleen-de-kramer
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/jakub-bronec
+- 
+  name: Thomas Durlacher
+  id: thomas-durlacher
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/thomas-durlacher
+- 
+  name: Antonio Maria Fiscarelli
+  id: antonio-maria-fiscarelli
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/antonio-maria-fiscarelli
+- 
+  name: Shohreh Haddadan
+  id: shohreh-haddadan
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/shohreh-haddadan
+- 
+  name: Ekatarina Kamlovskaya
+  id: ekatarina-kamlovskaya
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/ekatarina-kamlovskaya
+- 
+  name: Floor Koeleman
+  id: floor-koeleman
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/floor-koeleman
+- 
+  name: Jan Lotz
+  id: jan-lotz
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/jan-lotz
+- 
+  name: Sam Mersch
+  id: sam-mersch
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/sam-mersch
+- 
+  name: Christopher Morse
+  id: christopher-morse
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/christopher-morse
+- 
+  name: Kaarel Sikk
+  id: kaarel-sikk
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/kaarel-sikk
+- 
+  name: Sytze Van Herck
+  id: sytze-van-herck
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/sytze-van-herck
+- 
+  name: Eva Andersen
+  id: eva-andersen
+  affiliation: c2dh
+  url: https://www.c2dh.uni.lu/people/eva-andersen
+
+
+
+
+
+
+
+
+
 
 

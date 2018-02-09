@@ -21,9 +21,12 @@ body.index{
 
 
   .links line {
-    // stroke: $ink-blue;
-    // stroke-opacity: 0.6;
-
+    stroke: $ink-blue;
+    stroke-opacity: 0.3;
+    stroke-width: 1px;
+    &.on{
+      stroke-opacity: 1;
+    }
   }
 
   .nodes {
@@ -36,11 +39,25 @@ body.index{
       stroke: $ink-blue;
       fill: $cadmio;
       stroke-width: 0px;
+
+      
     }
 
-    text{
-      pointer-events:none;
-      display:none;
+    circle, .project circle, .partner circle{
+      &.whoosh{
+        transition: transform, .17s ease-in-out;
+        fill: $white;
+      }
+    }
+
+    g {
+      text{
+        pointer-events:none;
+        display:none;
+      }
+      &.on text{
+        display: block;
+      }
     }
 
     g:hover{
@@ -48,7 +65,10 @@ body.index{
         display: block;
       }
       circle {
-        transform: scale(1.5);
+        transform: scale(1.15);
+      }
+      .whoosh{
+        transform: scale(5);
       }
     }
     .project circle{

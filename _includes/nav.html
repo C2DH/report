@@ -72,7 +72,7 @@
         </ul>
 </nav>
 
-{% assign projects = site.pages | where: "layout","project" | where: "lang", "en" %}
+{% assign projects = site.pages | where: "layout","project" | where: "level", 1 | where: "lang", "en" %}
   
 
 

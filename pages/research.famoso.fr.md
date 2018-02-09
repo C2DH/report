@@ -1,5 +1,5 @@
 ---
-permalink: /research/famoso/
+permalink: /fr/research/famoso/
 link: /research/famoso/
 layout: project
 lang: fr

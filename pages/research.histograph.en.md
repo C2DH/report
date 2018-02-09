@@ -5,7 +5,7 @@ layout: project
 lang: en
 website:
   url: http://histograph.eu/
-
+level: 1
 title: histograph
 subheading: Graph-based exploration and crowd-based indexation for multimedia collections
 team:

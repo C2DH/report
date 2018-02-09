@@ -52,14 +52,20 @@ function M(options) {
     _self.node = _self.node.enter().append("g").attr("class", function(d){
       return d.type
     }).merge(_self.node);
-    _self.node.append("circle")
-      // .attr("fill", function(d,i){ return i==0?'magenta':'cyan'})
-      .attr("r", 16);
+    
     _self.node.append("text")
       .attr("dx", 25)
       .attr("dy", ".35em")
       .text(function(d) { return d.name });
 
+    _self.node.append("circle")
+      // .attr("fill", function(d,i){ return i==0?'magenta':'cyan'})
+      .attr("r", 16);
+
+    _self.node.append("circle")
+      .attr('class', 'whoosh')
+      // .attr("fill", function(d,i){ return i==0?'magenta':'cyan'})
+      .attr("r", 2);
     // _self.node.append("image")
     //   .attr("xlink:href", "https://github.com/favicon.ico")
     //   .attr("x", -8)
@@ -67,10 +73,12 @@ function M(options) {
     //   .attr("width", 16)
     //   .attr("height", 16);
 
-    _self.node.call(d3.drag()
-      .on("start", _self.ondragstarted)
-      .on("drag", _self.ondragged)
-      .on("end", _self.ondragended));
+    _self.node
+      .on("click", _self.onclick)
+      .call(d3.drag()
+        .on("start", _self.ondragstarted)
+        .on("drag", _self.ondragged)
+        .on("end", _self.ondragended));
     
     // Apply the general update pattern to the links.
     _self.link = _self.link.data(_self.graph.links, function(d) { return d.source.id + "-" + d.target.id; });
@@ -144,11 +152,46 @@ function M(options) {
 
   this.onresize = _debounce(_self.resize, 500);
 
+  this.onclick = function(d) {
+    _log('graph.onclick - node.id:', d.id);
+    
+    var neighbors = [];
+
+    // get neighbors
+    _self.link.attr('class', function(link) {
+      if(link.source.id == d.id || link.target.id == d.id){
+        neighbors.push(link.source.id, link.target.id)
+        return 'on';
+      }
+      return '';
+    });
+    // console.log(neighbors)
+    _self.node.attr('class', function(node) {
+
+      return neighbors.indexOf(node.id) !== -1? 'on ' + node.type: node.type;
+    });
+    // for(var i=0, j=_self.graph.links.length; i < j; i++){
+    //   var link = _self.graph.links[i];
+    //   if(link.source.id == d.id || link.target.id == d.id) {
+    //     console.log('found',link.index, 'source:', link.source.id, link.target.id)
+    //     // _self.link[0][link.index].classed('active',true)
+    //     debugger
+    //     _self.link[link.index].classed('active',true)
+    //   }
+    // }
+    // var neighbors_links = _self.graph.links.filter(function(link) {
+    //   return link.source.id == d.id || link.target.id == d.id
+    // });
+
+    // _log('graph.onclick', d, d.id, neighbors_links, arguments)
+  }
+
   this.ondragstarted = function(d) {
     if (!d3.event.active) 
       _self.simulation.alphaTarget(0.3).restart();
     d.fx = d.x;
     d.fy = d.y;
+    _self.onclick(d);
   }
 
   this.ondragged = function(d) {
