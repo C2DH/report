@@ -85,6 +85,20 @@
       {% include project.html %}
     </li>
     {% endfor %}
+    {% for _project in projects %}
+    {% assign translations = site.pages | where: "link", _project.link | where: "layout","project" | where: "lang", page.lang %}
+    <li class='nav-item'>
+      {% assign project = translations[0] %}
+      {% include project.html %}
+    </li>
+    {% endfor %}
+    {% for _project in projects %}
+    {% assign translations = site.pages | where: "link", _project.link | where: "layout","project" | where: "lang", page.lang %}
+    <li class='nav-item'>
+      {% assign project = translations[0] %}
+      {% include project.html %}
+    </li>
+    {% endfor %}
   </ul>
   
 </div>

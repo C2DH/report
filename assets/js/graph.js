@@ -23,14 +23,21 @@ function M(options) {
   var _self = this;
 
   this.ticked = function() {
+    // bound to border
+    _self.node.attr("transform", function(d) { 
+      d.y = Math.max(d.r, Math.min(_self.height - d.r, d.y));
+      d.x = Math.max(d.r, Math.min(_self.width - d.r, d.x));
+    
+      return "translate(" + d.x + "," + d.y + ")"; 
+    });
+    
+
     _self.link
         .attr("x1", function(d) { return d.source.x; })
         .attr("y1", function(d) { return d.source.y; })
         .attr("x2", function(d) { return d.target.x; })
         .attr("y2", function(d) { return d.target.y; });
 
-    // bound to border
-    _self.node.attr("transform", function(d) { return "translate(" + d.x + "," + d.y + ")"; });
     // _self.node
     //     .attr("cx", function(d, i) { 
     //       // if(i==0)
@@ -60,7 +67,9 @@ function M(options) {
 
     _self.node.append("circle")
       // .attr("fill", function(d,i){ return i==0?'magenta':'cyan'})
-      .attr("r", 16);
+      .attr("r", function(d){
+        return d.r;
+      });
 
     _self.node.append("circle")
       .attr('class', 'whoosh')
@@ -99,15 +108,15 @@ function M(options) {
   this.resize = function() {
 
     // reposition elements
-    var rect = this.container.getBoundingClientRect();
+    var rect = _self.container.getBoundingClientRect();
 
-    this.width  = rect.width;
-    this.height = rect.height;
+    _self.width  = rect.width;
+    _self.height = rect.height;
 
-    _log('graph.resize - width:', this.width, '- height', this.height);
+    _log('graph.resize - width:', _self.width, '- height', _self.height);
     
-    if(this.graph)
-      this.render();
+    if(_self.graph)
+      _self.render();
   }
 
 
@@ -119,6 +128,7 @@ function M(options) {
     this.link = this.svg.append("g").classed("links", true).selectAll("line");
     this.node = this.svg.append("g").classed("nodes", true).selectAll("circle");
 
+    this.radius = 11;
     
     // init force!
     this.simulation = d3.forceSimulation()
@@ -145,6 +155,7 @@ function M(options) {
       return d.source;
     })
     this.graph.nodes = graph.nodes.filter(function(d){
+      d.r = d.r || _self.radius;
       return d.id;
     })
     this.render();
