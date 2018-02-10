@@ -134,7 +134,7 @@ function M(options) {
     this.simulation = d3.forceSimulation()
       .force("link", d3.forceLink().id(function(d) { return d.id; }).distance(100))
       .force("charge", d3.forceManyBody())
-      .force("center", d3.forceCenter(150, 150))
+      .force("center", d3.forceCenter(this.width /2, this.height /2))
       //.alphaTarget(1)
       .on("tick", this.ticked)
 
