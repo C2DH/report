@@ -1,10 +1,19 @@
 div.page{
   position:relative;
-  min-height: 80%;
+  
   background: $almost-white;
 
   padding-top: 20px;
   margin: 0;
+
+  border-bottom: 2px solid $blue;
+  border-top: 1px solid $cadmio;
+
+  &.no-padding{
+    padding: 0 0 0 0;
+  }
+
+  
 
   h1.title{
 

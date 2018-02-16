@@ -9,6 +9,13 @@ body.index{
     
   }
 
+  .page{
+    min-height: 90%;
+
+    &.no-padding{
+      min-height: auto;
+    }
+  }
   .svg-wrapper{
     position:absolute;
     top:0;

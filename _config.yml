@@ -5,4 +5,4 @@ excerpt_separator: '<!-- more -->'
 
 permalink: /:lang/:title.html
 title: 2017 annual report
-exclude: [scripts]
+exclude: [scripts, d3]

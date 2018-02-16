@@ -1,5 +1,4 @@
----
----
+
 function _debounce (fn, delay) {
   var timer = null;
   return function () {
@@ -17,6 +16,7 @@ function _log() {
   args.unshift("[📺]");
   console.log.apply(console, args);
 }
+
 
 
 function M(options) {
@@ -120,9 +120,12 @@ function M(options) {
   }
 
 
-  this.init = function(svg) {
+  this.init = function(svg, eventPrefix) {
     this.svg = d3.select(svg);
     this.container = this.svg.node().parentNode;
+
+    // initialize events
+    this.dispatcher = d3.dispatch('onclicknode', 'end');
 
     // init link and node collections
     this.link = this.svg.append("g").classed("links", true).selectAll("line");
@@ -151,12 +154,13 @@ function M(options) {
 
     this.graph = {};
 
-    this.graph.links = graph.links.filter(function(d){
-      return d.source;
-    })
-    this.graph.nodes = graph.nodes.filter(function(d){
+    this.graph.links = graph.links;
+    // .filter(function(d){
+    //   return d.source;
+    // })
+    this.graph.nodes = graph.nodes.map(function(d){
       d.r = d.r || _self.radius;
-      return d.id;
+      return d;
     })
     this.render();
   }
@@ -164,6 +168,9 @@ function M(options) {
   this.onresize = _debounce(_self.resize, 500);
 
   this.onclick = function(d) {
+    _self.dispatcher.call('onclicknode', this, d);
+
+    d3.select(this).raise()
     _log('graph.onclick - node.id:', d.id);
     
     var neighbors = [];
@@ -219,20 +226,3 @@ function M(options) {
 
   this.init(options.svg )
 }
-
-document.addEventListener("DOMContentLoaded", function(e) {
-
-  d3.json("{{"/assets/data/graph.json"| relative_url }}", function(error, graph) {
-    if (error) throw error;
-      console.log(graph)
-      graph.links = graph.links.filter(function(d){
-      return d._id;
-    })
-    // resize the canvas to fill browser window dynamically
-    var m = new M({
-      svg: '#svg-graph'
-    });
-
-    m.update(graph)
-  });
-})
