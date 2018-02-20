@@ -2,7 +2,6 @@ theme: minima
 default_lang: en
 languages: ["en", "fr"]
 excerpt_separator: '<!-- more -->'
-
 permalink: /:lang/:title.html
 title: 2017 annual report
 exclude: [scripts, d3]

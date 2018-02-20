@@ -5,7 +5,7 @@
       <a class="navbar-brand" style='margin-right: 0'>
        <img style='height:60px' src='{{ "assets/images/unilu-logo.png" | relative_url}}' alt='University of Luxembourg'>
       </a>
-      <a class="navbar-brand" href="{{'/' | absolute_url}}">
+      <a class="navbar-brand" href="{{'/' | relative_url}}">
        {{site.title}}
       </a>
       
@@ -27,7 +27,7 @@
     <div class="container">
     <div class="collapse navbar-collapse">
       
-      <a class="navbar-brand" href="{{'/' | absolute_url}}">
+      <a class="navbar-brand" href="{{'/' | relative_url}}">
        {{site.title}}
       </a>
       <ul class="navbar-nav ">
@@ -35,9 +35,9 @@
         <li class='nav-item {% if page.link == link.href %} active {% endif %}'>
           <a class="nav-link" 
             {% if page.lang == site.default_lang %} 
-              href='{{link.href | absolute_url}}' 
+              href='{{link.href | relative_url}}' 
             {% else %} 
-              href='{{page.lang | absolute_url}}{{link.href}}'
+              href='{{page.lang | relative_url}}{{link.href}}'
             {% endif %}>{% assign key=link.title%}{% include t.html %}</a>
         </li>
         {% endfor %}
@@ -55,21 +55,20 @@
     <li class="nav-item {% if page.link == link.href %} active {% endif %}">
       <a class="nav-link" 
         {% if page.lang == site.default_lang %} 
-          href='{{link.href | absolute_url}}' 
+          href='{{link.href | relative_url}}' 
         {% else %} 
-          href='{{page.lang | absolute_url}}{{link.href}}'
+          href='{{page.lang | relative_url}}{{link.href}}'
         {% endif %}>{% assign key=link.title%}{% include t.html %}</a>
     </li>
     {% endfor %}
   </ul>
-
   <ul class='nav flex-row languages'>
-          {% for lang in site.languages %}
-          <li class="nav-item {% if lang == page.lang %} active {% endif %}">
-            <a class="nav-link" {% if lang == site.default_lang %} href='{{page.link | absolute_url}}' {% else %} href='{{lang | absolute_url}}{{page.link}}' {% endif %}><span>{{lang}}</span></a>
-          </li>
-          {% endfor %}
-        </ul>
+    {% for lang in site.languages %}
+    <li class="nav-item {% if lang == page.lang %} active {% endif %}">
+      <a class="nav-link" {% if lang == site.default_lang %} href='{{page.link | relative_url}}' {% else %} href='{{lang | relative_url}}{{page.link}}' {% endif %}><span>{{lang}}</span></a>
+    </li>
+    {% endfor %}
+  </ul>
 </nav>
 
 {% assign projects = site.pages | where: "layout","project" | where: "level", 1 | where: "lang", "en" %}
